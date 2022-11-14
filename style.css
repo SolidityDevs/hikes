@@ -14,7 +14,7 @@
 }
 
 body{
-    background: #33363c;
+    background-image: linear-gradient(to right, #475966 0%, #424159 60%);
     line-height: 2;
     margin: 0 auto;
     height: 100%;
@@ -279,7 +279,7 @@ ul{
 
 .mission{
     margin:20px 50px;
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
 }
 
@@ -348,8 +348,8 @@ ul{
 }
 
 .bl .bo{
-    width: calc(100% -  7rem);
-    height: 270px;
+    width: calc(100% -  5rem);
+    height: 300px;
     margin: auto;
 }
 .bl .bo{
@@ -395,7 +395,7 @@ ul{
 }
 #hikes-wallet .nbn:hover{
     color: bisque;
-    box-shadow:0 0 10px 0 green inset, 0 0 10px 5px white;
+    box-shadow:10 0 10px 0 green inset, 0 0 10px 5px white;
 
 }
 
