@@ -1,0 +1,405 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap");
+
+
+:root{
+    --color-1: rgba(178, 194, 196, 0.667);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Inconsolata', monospace;
+}
+
+body{
+    background: #33363c;
+    line-height: 2;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+
+}
+
+/**Introduction or homepage **/
+
+#loaders {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 15s;
+    animation-name: animatebottom;
+    animation-duration: 3s
+}
+
+@-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+ul{
+	list-style: none;
+}
+
+
+.container{
+	max-width: 1170px;
+	margin: auto;
+}
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+.align-items-center{
+	align-items: center;
+}
+
+.justify-content-between{
+	justify-content: space-between;
+}
+
+/*header*/
+.header{
+	background-color: var(--color-1);
+	padding:0;
+    margin: 0;
+	position: relative;
+}
+
+
+.header .logo,
+.header .nav{
+	padding:0;
+}
+
+
+.header .logo a{
+	font-size: 35px;
+    font-weight: 200;
+	color: #ffffff;
+	text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+
+
+.header .nav {
+    text-transform: capitalize;
+    color: #ffffff;
+}
+
+.header .nav ul li{
+	display: inline-block;
+	margin-left: 40px;
+}
+
+
+.header .nav ul li a{
+	display: block;
+	font-size: 16px;
+	padding:10px 0;
+	color: #ffffff;
+	text-transform: capitalize;
+	transition: all 0.5s ease;
+}
+
+
+.header .nav ul li a:hover,
+.header .nav ul li a.active{
+	color: #ffffff;
+}
+
+
+.header #nav-check{
+	position: absolute;
+	opacity:0;
+	pointer-events: none;
+}
+
+
+.nav-toggler{
+	height: 34px;
+	width: 44px;
+	background-color: #69b848;
+	border-radius: 4px;
+	cursor: pointer;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	margin-right: 15px ;
+}
+
+
+.nav-toggler span{
+	display: block;
+	height: 2px;
+	width: 20px;
+	background-color: var(--color-1);
+	position: relative;
+}
+
+
+.nav-toggler span::before,
+.nav-toggler span::after{
+    content: '';
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-1);
+    left:0;
+}
+
+
+.nav-toggler span::before{
+	top: -6px;
+}
+
+
+.nav-toggler span::after{
+	top: 6px;
+}
+
+
+@media(max-width: 991px){
+    .nav-toggler{
+        display: flex;
+    }
+    .header .nav{
+        position: absolute;
+        left:0;
+        top:100%;
+        width: 100%;
+        background-color: rgb(97, 72, 97);
+        border-top: 2px solid rgba(88, 53, 53, 0.2);
+        opacity:0;
+        visibility: hidden;
+    }
+    .header .nav ul li{
+        display: block;
+        margin:0px;
+    }
+    .header #nav-check:checked ~ .nav{
+        opacity: 1;
+        visibility: visible;
+    }
+    .header #nav-check:focus ~ .nav-toggler{
+        box-shadow: 0 0 15px #543c3c;
+    }
+    .header #nav-check:checked ~ .nav-toggler span{
+        background-color: transparent;
+    }
+    .header #nav-check:checked ~ .nav-toggler span::before{
+        top:0;
+        transform: rotate(45deg);
+    }
+    .header #nav-check:checked ~ .nav-toggler span::after{
+        top:0;
+        transform: rotate(-45deg);
+    }
+}
+
+
+.intro {
+    line-height: 2.5;
+    text-align: center;
+    justify-content: space-between;
+    font-size: 12px;
+    margin: 20px;
+    font-size: 20px;
+}
+
+
+/** Text Changers **/
+.changer{
+    text-align: center;
+    justify-content:space-evenly;
+    justify-items: center;
+    line-height: 1.5;
+    color: green;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+    
+
+
+.changer span:after {
+    content:"";
+    animation: spin 30s linear infinite;
+    color: green;
+    font-weight: 800;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+}
+
+@keyframes spin {
+    0% {
+        content:" start with hike.";
+        
+    }
+
+    10% {
+        content:" run project with hike.";
+    }
+
+    20% {
+        content:" Grow with hike.";
+    }
+    40% { 
+        content:" Scale with hike.";
+    }
+    60% { 
+        content:" Build with hike.";
+    }
+    80% { 
+        content:" Plan with hike.";
+    }
+
+    100% { 
+        content: " Invest with hike.";
+    }
+
+}
+
+.mission{
+    margin:20px 50px;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+/**Buttons **/
+
+.btn {
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 2px solid #269acc;
+    border-radius: 0.6em;
+    color: #e7a03c;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 20px;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.btn:hover, .btn:focus {
+    color: #fff;
+    outline: 0;
+}
+
+.third {
+    border-color: #9dc7ab;
+    color: #fff;
+    box-shadow: 0 0 10px 0 #384a83 inset, 0 0 10px 4px #1d979e;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+}
+.third:hover {
+    box-shadow: 0 0 10px 0 green inset, 0 0 10px 5px white;
+}
+
+
+
+
+
+#anno{
+    min-height: 150vh;
+}
+.block{
+    justify-content: space-evenly;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    
+}
+
+.block strong{
+    color: green;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#bod{
+    text-align: center;
+    font-family:fantasy;
+    display: block;
+}
+
+.bl .bo{
+    width: calc(100% -  7rem);
+    height: 270px;
+    margin: auto;
+}
+.bl .bo{
+    border: 6px double rgb(115, 142, 169);
+    border-radius: 10px;
+}
+
+.bl .bo:hover{
+    box-shadow: 0 0 10px 0 rgb(115, 171, 115) inset, 0 0 10px 5px white;
+    color: white;
+}
+
+.bl .bo h2{
+    font-size: 30px;
+}
+
+/** Wallet app **/
+
+#hikes-wallet{
+    min-height: 100vh;
+    background-image: linear-gradient(to right, #243949 0%, #3d5365 60%);
+}
+#hikes-wallet h3{
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+#hikes-wallet #co{
+    color: green;
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#hikes-wallet .nbn{
+    border: 5px solid white;
+    width: calc(100% -  10rem);
+    height: 130px;
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+}
+#hikes-wallet .nbn:hover{
+    color: bisque;
+    box-shadow:0 0 10px 0 green inset, 0 0 10px 5px white;
+
+}
+
+#hikes-wallet .nbn h5{
+    font-size: 20px;
+    text-transform: capitalize;
+}
