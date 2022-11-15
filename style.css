@@ -277,16 +277,13 @@ ul{
 
 }
 
-.misson2{
-    justify-content: center;
+.missions{
     text-align: center;
-    justify-items: center;
-    margin: 20px 50px;
-    font-size: 30px;
 }
+
 .mission{
-    margin:20px 50px;
     font-size: 20px;
+    margin: 10px 3px;
 }
 
 
@@ -308,6 +305,7 @@ ul{
     text-align: center;
     text-transform: uppercase;
     font-weight: 700;
+    justify-content: center;
 }
 
 .btn:hover, .btn:focus {
@@ -355,7 +353,7 @@ ul{
 
 .bl .bo{
     width: calc(100% -  5rem);
-    height: 300px;
+    height: 350px;
     margin: auto;
 }
 .bl .bo{
