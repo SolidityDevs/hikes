@@ -277,10 +277,16 @@ ul{
 
 }
 
+.misson2{
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+    margin: 20px 50px;
+    font-size: 30px;
+}
 .mission{
     margin:20px 50px;
     font-size: 20px;
-    justify-items: center;
 }
 
 
@@ -348,8 +354,8 @@ ul{
 }
 
 .bl .bo{
-    width: calc(100% -  3rem);
-    height: 350px;
+    width: calc(100% -  5rem);
+    height: 300px;
     margin: auto;
 }
 .bl .bo{
@@ -387,8 +393,8 @@ ul{
 
 #hikes-wallet .nbn{
     border: 5px solid white;
-    width: calc(100% -  10rem);
-    height: 130px;
+    width: calc(100% -  3rem);
+    height: 350px;
     margin: auto;
     text-align: center;
     border-radius: 10px;
