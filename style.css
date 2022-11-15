@@ -279,10 +279,11 @@ ul{
 
 .missions{
     text-align: center;
+    font-size: 60px;
 }
 
 .mission{
-    font-size: 20px;
+    font-size: 40px;
     margin: 10px 3px;
 }
 
