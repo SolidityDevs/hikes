@@ -352,7 +352,7 @@ ul{
 }
 
 .bl .bo{
-    width: calc(100% -  5rem);
+    width: calc(100% -  3rem);
     height: 350px;
     margin: auto;
 }
