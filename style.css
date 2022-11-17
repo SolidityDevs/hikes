@@ -372,7 +372,7 @@ ul{
 /** Features **/
 
 .features{
-    min-height: 230vh;
+    min-height: 200vh;
     font-feature-settings: "afrc";
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
@@ -392,7 +392,7 @@ ul{
 .features #feature .jj{
     width: calc(100% - 2rem);
     margin: 30px auto;
-    height: 250px;
+    height: 200px;
     text-align: center;
     line-height: 2;
 }
