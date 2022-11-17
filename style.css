@@ -390,9 +390,9 @@ ul{
 }
 
 .features #feature .jj{
-    width: calc(100% - 7rem);
+    width: calc(100% - 2rem);
     margin: 30px auto;
-    height: 250px;
+    height: 300px;
     text-align: center;
     line-height: 2;
 }
