@@ -27,9 +27,9 @@ body{
 #loaders {
     position: relative;
     -webkit-animation-name: animatebottom;
-    -webkit-animation-duration: 15s;
+    -webkit-animation-duration: 25s;
     animation-name: animatebottom;
-    animation-duration: 3s
+    animation-duration: 10s
 }
 
 @-webkit-keyframes animatebottom {
